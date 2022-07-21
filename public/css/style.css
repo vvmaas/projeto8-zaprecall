@@ -83,6 +83,9 @@ body {
     align-items: center;
     position: fixed;
     top: 20px;
+    background-color: #FB6B6B;
+    z-index: 4;
+
 }
 
 .logo-run img {
@@ -91,7 +94,13 @@ body {
 }
 
 .questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
+    height: 75vh;
+    overflow: scroll;
 }
 
 .question-undone, .question-done {
@@ -173,7 +182,8 @@ body {
     color: white;
     border-radius: 5px;
     width: 25vw;
-    height: 37px;
+    height: 5vh;
+    max-height: 37px;
     font-size: 12px;
     display: flex;
     align-items: center;
