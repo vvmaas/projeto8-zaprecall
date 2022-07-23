@@ -1,5 +1,6 @@
 import React from "react"
 import Question from "./Question"
+import zaplogo from "../assets/zap.png"
 
 
 export default function RunPage({questionsRun}) {
@@ -45,7 +46,7 @@ export default function RunPage({questionsRun}) {
     return (
         <div className="run-page">
             <div className="logo-run" onClick={reload}>
-                <img src="assets/zap.png" alt=""/>
+                <img src={zaplogo} alt=""/>
                 <h1>ZapRecall</h1>
             </div>
             <div className="questions">

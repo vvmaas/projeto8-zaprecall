@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Recursive', sans-serif;
+    background-color: #FB6B6B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*----------*/
+
+
+.start-page, .run-page {
+    height: 100vh;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-page{
+    position: fixed;
+    z-index: 5;
+    right: 0vw;
+    background-color: #FB6B6B;
+    width: 100vw;
+}
+
+.logo-home, .logo-run {
+    font-family: 'Righteous', cursive;
+    cursor: pointer;
+}
+
+.logo-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 6vh;
+}
+
+.logo-home, .logo-run h1 {
+    color: white;
+    font-size: 36px;
+}
+
+.logo-home img {
+    width: 10vw;
+    margin-bottom: 3vh;
+    min-width: 160px;
+}
+
+.button-start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    max-width: 500px;
+    height: 60px;
+    background-color: white;
+    color: #FB6B6B;
+    border: 1px solid #D70900 ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*-----------*/
+
+.questions ion-icon {
+    cursor: pointer;
+}
+
+.logo-run {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    background-color: #FB6B6B;
+    z-index: 4;
+
+}
+
+.logo-run img {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    height: 75vh;
+    overflow: scroll;
+}
+
+.question-undone, .question-done {
+    width: 85vw;
+    height: 9vh;
+    margin-bottom: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.question-undone ion-icon, .question-done ion-icon{
+    margin-right: 5px;
+    font-size: 25px ;
+}
+
+.question-undone span {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.question-done span {
+    margin-left: 10px;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.question-open {
+    width: 85vw;
+    height: 18vh;
+    margin-bottom: 3vh;
+    background: #FFFFD5;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.question-open span {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.question-open ion-icon {
+    position:absolute;
+    bottom: 10px;
+    right: 12px;
+}
+
+.question-answer {
+    width: 85vw;
+    height: 18vh;
+    margin-bottom: 3vh;
+    background: #FFFFD5;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.question-answer span {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.question-result {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 8px;
+}
+
+.red-answer, .orange-answer, .green-answer {
+    color: white;
+    border-radius: 5px;
+    width: 25vw;
+    height: 5vh;
+    max-height: 37px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.red, ion-icon[name="close-circle"] {
+    color: red;
+}
+
+.orange, ion-icon[name="help-circle"] {
+    color: orange;
+}
+
+.green, ion-icon[name="checkmark-circle"] {
+    color: green;
+}
+
+.orange-answer {
+    background-color: orange;
+}
+
+.green-answer {
+    background-color: green;
+}
+
+.red-answer {
+    background-color: #D70900;
+}
+
+.progress-bar{
+    background-color: white;
+    z-index: 4;
+    position: fixed;
+    bottom: 0;
+    height: fit-content;
+    min-height: 60px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-count {
+    margin-top: 5px;
+}
+
+.progress-icons {
+    margin-bottom: 10px;
+    margin-top: 4px;
+}
+
+
+
+.end-message {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.end-message strong {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+
+.hidden {
+    display: none
+}

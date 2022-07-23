@@ -10,9 +10,9 @@ export default function Question({question, answer, index, questionsDone, iconsB
     let [icon, setIcon] = React.useState("")
 
     return (<>
-        <div class="question-undone" className={undone}>
+        <div class="question-undone" className={undone} onClick={() => {setUndone("hidden"); setOpen('question-open'); questionsDone()}}>
             <span> Pergunta {index}</span>
-            <ion-icon name="play-outline" onClick={() => {setUndone("hidden"); setOpen('question-open'); questionsDone()}}></ion-icon>
+            <ion-icon name="play-outline" ></ion-icon>
         </div>
         <div class="question-open" className={open}>
             <br/>

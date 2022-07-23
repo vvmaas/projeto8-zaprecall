@@ -1,5 +1,7 @@
 import RunPage from "./RunPage";
 import StartPage from "./StartPage";
+import "../css/reset.css"
+import "../css/style.css"
 
 export default function App(){
     let questionsObj=[
